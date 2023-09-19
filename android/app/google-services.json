@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "887461055219",
+    "project_id": "mydatingapp-99dbe",
+    "storage_bucket": "mydatingapp-99dbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887461055219:android:546c1161702a617e3c0586",
+        "android_client_info": {
+          "package_name": "com.example.datingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887461055219-6ijh9c5envogejqpujhkt7nc5cuc6ld2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_dSsoF_oRXFB__wtHqwjxsAW4PBwKSTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887461055219-6ijh9c5envogejqpujhkt7nc5cuc6ld2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
