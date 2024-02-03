@@ -12,8 +12,8 @@ Welcome to My Dating App – Where Connections Begin!
 ## Features
 
 - **Real-time Messaging:** Engage in instant conversations with real-time messaging and read receipts.
-- **ABC Feature:** [Brief description of the unique ABC feature you implemented.]
-- **Optimized XYZ:** Enjoy a 50% improvement in [specify what was optimized] for a smoother experience.
+- **UI/UX:** Designed the entire UI for an intuitive and engaging user experience
+- **Feature:** Implemented swipable card with animation for enhanced user interactions.
 
 ## Tech Stack
 
