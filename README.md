@@ -1,16 +1,26 @@
-# datingapp
+## Screenshots
 
-A new Flutter project.
 
-## Getting Started
+![preview](https://github.com/shagirulrw/datingapp/assets/110932234/74a992d9-42ed-47d9-9398-1908ae01c096)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+# Dating App
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Welcome to My Dating App – Where Connections Begin!
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Features
+
+- **Real-time Messaging:** Engage in instant conversations with real-time messaging and read receipts.
+- **ABC Feature:** [Brief description of the unique ABC feature you implemented.]
+- **Optimized XYZ:** Enjoy a 50% improvement in [specify what was optimized] for a smoother experience.
+
+## Tech Stack
+
+- **Frontend:** Flutter
+- **Backend:** Firebase
+- **Language:** Dart
+
+Ready to find love? Dive into the world of love and make meaningful connections today!
+
+Happy dating!
