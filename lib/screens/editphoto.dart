@@ -15,7 +15,7 @@ import '../model/usermodel.dart';
 import '../provider/user_provider.dart';
 
 class EditPhotoPage extends StatefulWidget {
-  EditPhotoPage({Key? key}) : super(key: key);
+  const EditPhotoPage({Key? key}) : super(key: key);
 
   @override
   State<EditPhotoPage> createState() => _EditPhotoPageState();

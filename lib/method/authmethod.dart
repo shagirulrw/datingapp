@@ -30,19 +30,19 @@ class AuthMethod {
       required BuildContext context}) async {
     try {
       if (email.isNotEmpty || password.isNotEmpty || name.isNotEmpty) {
-        UserCredential _cred = await _auth.createUserWithEmailAndPassword(
+        UserCredential cred = await _auth.createUserWithEmailAndPassword(
             email: email, password: password);
 
-        context.read<UserProvider>().cred = _cred;
+        context.read<UserProvider>().cred = cred;
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
               builder: (context) => AddDetails(
-                    cred: _cred,
+                    cred: cred,
                   )),
         );
         ////////////////////////////
-        _firetore.collection("users").doc(_cred.user!.uid).set({
+        _firetore.collection("users").doc(cred.user!.uid).set({
           "username": name,
           "age": 0,
           "bio": "Add Bio",
@@ -134,7 +134,7 @@ class AuthMethod {
       Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => Authwrapper(),
+            builder: (context) => const Authwrapper(),
           ));
       if (!_auth.currentUser!.emailVerified) {}
     } on FirebaseAuthException catch (e) {
@@ -164,7 +164,4 @@ class AuthMethod {
       showSnackbar(context, e.message.toString());
     }
   }
-
-  // Future<String> getUsernmeusingUID({required uid}) {}
-  /////////////////////////////////////////////////
 }

@@ -54,10 +54,10 @@ class _TindercardState extends State<Tindercard> {
             ..rotateZ(angle)
             ..translate(-center.dx, -center.dy);
           return AnimatedContainer(
-            child: Buildcard(),
             curve: Curves.easeInOut,
             duration: Duration(milliseconds: milliseconds),
             transform: rotatedMatrix..translate(position.dx, position.dy),
+            child: Buildcard(),
           );
         },
       )

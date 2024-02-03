@@ -1,20 +1,19 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:datingapp/screens/chatscreen.dart';
 import 'package:datingapp/screens/explorepage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-Color _basecolor = Color(0xff1C1D21);
-Color _primarycolor = Color(0xff19BE8E);
-Color _keycolor = Color(0xffEDF583);
+Color _basecolor = const Color(0xff1C1D21);
+Color _primarycolor = const Color(0xff19BE8E);
+Color _keycolor = const Color(0xffEDF583);
 
 final messengerKey = GlobalKey<ScaffoldMessengerState>();
 pickImage(ImageSource source, BuildContext context) async {
-  final ImagePicker _picker = ImagePicker();
-  final XFile? _file = await _picker.pickImage(source: source);
-  if (_file != null) {
-    return await _file.readAsBytes();
+  final ImagePicker picker = ImagePicker();
+  final XFile? file = await picker.pickImage(source: source);
+  if (file != null) {
+    return await file.readAsBytes();
   } else {
     showSnackbar(context, "Please Select An Image !!");
   }

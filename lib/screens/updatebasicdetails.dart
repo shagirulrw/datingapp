@@ -1,5 +1,3 @@
-// import 'dart:html';
-
 import 'package:datingapp/method/authmethod.dart';
 
 import 'package:datingapp/screens/explorepage.dart';

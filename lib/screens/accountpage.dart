@@ -152,7 +152,7 @@ class AccountPage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => EditPhotoPage()),
+                              builder: (context) => const EditPhotoPage()),
                         );
                       },
                       child: Stack(children: [

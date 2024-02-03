@@ -1,10 +1,7 @@
-import 'package:datingapp/method/authmethod.dart';
 import 'package:datingapp/provider/cardprovider.dart';
 import 'package:datingapp/provider/user_provider.dart';
-import 'package:datingapp/screens/adddetails.dart';
 
 import 'package:datingapp/screens/homepage.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:datingapp/screens/signin.dart';
 // import 'package:datingapp/screens/updatesecondarydetails.dart';
@@ -100,6 +97,7 @@ class Authwrapper extends StatefulWidget {
 }
 
 class _AuthwrapperState extends State<Authwrapper> {
+  @override
   void initState() {
     // TODO: implement initState
     super.initState();

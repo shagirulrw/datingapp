@@ -18,7 +18,7 @@ class ChatScreen extends StatefulWidget {
   final name;
   final photo;
 
-  ChatScreen({
+  const ChatScreen({
     Key? key,
     required String this.doc,
     required String this.name,
@@ -31,7 +31,7 @@ class ChatScreen extends StatefulWidget {
 
 class _ChatScreenState extends State<ChatScreen> {
   //for storing all messages
-  List<Message> _list = [];
+  final List<Message> _list = [];
 
   //for handling message text changes
   final messageController = TextEditingController();

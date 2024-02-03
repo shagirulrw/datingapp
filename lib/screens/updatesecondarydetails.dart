@@ -59,8 +59,6 @@ late List prefetchdetails;
 class _UpdateSecondaryDetailsState extends State<UpdateSecondaryDetails> {
   @override
   void initState() {
-    // TODO: implement initState
-
     prefetchdetails = widget.prefetchdetail!;
     cityController = TextEditingController(text: prefetchdetails[0]);
     educationController = TextEditingController(text: prefetchdetails[2]);
@@ -73,7 +71,7 @@ class _UpdateSecondaryDetailsState extends State<UpdateSecondaryDetails> {
     int feet = (inches ~/ 12);
     int remainingInches = (inches % 12).toInt();
 
-    return "$feet' ${remainingInches}";
+    return "$feet' $remainingInches";
   }
 /////////////
 

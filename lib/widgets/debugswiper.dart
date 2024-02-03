@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class DebugSwipercard extends StatelessWidget {
-  DebugSwipercard({
+  const DebugSwipercard({
     Key? key,
   }) : super(key: key);
 
@@ -96,10 +96,10 @@ class _TindercardState extends State<Tindercard> {
             ..rotateZ(angle)
             ..translate(-center.dx, -center.dy);
           return AnimatedContainer(
-            child: Buildcard(),
             curve: Curves.easeInOut,
             duration: Duration(milliseconds: milliseconds),
             transform: rotatedMatrix..translate(position.dx, position.dy),
+            child: Buildcard(),
           );
         },
       )

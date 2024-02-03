@@ -110,17 +110,12 @@ class FirebaseMethod {
           .doc(currentuid)
           .update({"newmess": true});
     } else {
-      // print("else");
       _firetore.collection('users').doc(currentuid).update({
         "liked": FieldValue.arrayUnion([targetuid])
       });
       _firetore.collection('users').doc(targetuid).update({
         "likedyou": FieldValue.arrayUnion([currentuid])
       });
-      // _firetore.collection('users').doc(targetuid).update({
-      //   "liked": FieldValue.arrayUnion([currentuid])
-      // });
-      /////////////////////////////////////
     }
   }
 
@@ -196,16 +191,11 @@ class FirebaseMethod {
     String b = code.substring(
       (divpos + 1),
     );
-    // print(a);
-    // print(b);
+
     if (a == currentuserid) {
       return b;
     } else {
       return a;
     }
-    // return;
   }
 }
-
-////////////////////////////////
- 

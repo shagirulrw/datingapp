@@ -481,7 +481,7 @@ Widget tile(String uid, bool hiddenimg) {
                             child: Container(
                                 alignment: Alignment.center,
                                 // color: Colors.grey.withOpacity(0.1),
-                                child: SizedBox()),
+                                child: const SizedBox()),
                           ))
                         : const SizedBox(
                             height: double.infinity,
@@ -504,7 +504,7 @@ Widget tile(String uid, bool hiddenimg) {
                   height: 5.h,
                 ),
                 hiddenimg
-                    ? SizedBox()
+                    ? const SizedBox()
                     : InkWell(
                         onTap: () {
                           FirebaseMethod().removeLike(

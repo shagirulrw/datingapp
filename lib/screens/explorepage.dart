@@ -346,7 +346,7 @@ class _ExplorePageState extends State<ExplorePage> {
             );
           } else {
             // If there's no data
-            return Center(child: Text('No data available'));
+            return const Center(child: Text('No data available'));
           }
         },
       ),

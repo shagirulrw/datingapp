@@ -26,10 +26,10 @@ Widget customtextfield(
           hintText: hint,
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(radius),
-              borderSide: BorderSide(color: Colors.black, width: 2)),
+              borderSide: const BorderSide(color: Colors.black, width: 2)),
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(radius),
-              borderSide: BorderSide(color: Colors.white, width: 0.5))),
+              borderSide: const BorderSide(color: Colors.white, width: 0.5))),
       controller: controller,
     ),
   );

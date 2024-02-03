@@ -238,7 +238,7 @@ Widget indicator(int q) {
 
 class Tile extends StatefulWidget {
   final photourllist;
-  Tile({
+  const Tile({
     Key? key,
     required this.photourllist,
   }) : super(key: key);
